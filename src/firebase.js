@@ -19,13 +19,14 @@ import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
 
+    
+    //These are Api keys etc thats stored in.env file which is immported here
 
-
+    // ||"api" is there to initilize api key without it code might throw an error
     apiKey: import.meta.env.VITE_API_KEY || "api",
 
     authDomain: import.meta.env.VITE_AUTH_DOMAIN,
 
-    //databaseURL is the url for RealtimeDatabase
   
     projectId: import.meta.env.VITE_PROJECT_ID,
   

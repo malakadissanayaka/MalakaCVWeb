@@ -1,0 +1,14 @@
+.navpanel{
+    background-color:rgb(31, 31, 35) ;
+}
+
+.nav{
+    background-color:rgb(32, 32, 32) ;
+    &:hover{
+        background-color: rgb(84, 98, 98);
+    }
+}
+
+.main{
+    background-color:rgb(48, 48, 62) ;
+}

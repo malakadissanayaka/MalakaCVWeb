@@ -3,24 +3,19 @@ import { auth } from './firebase';
 
 const PrivateRouteuser = () => {
     const location = useLocation();
-
-
-  
     try {
-    return auth.currentUser != null && auth.currentUser.id == "4pjT9kbTWQYz6H1MUVZqoOIkVm33"  ? (
-      
+    
+    return auth.currentUser != null && auth.currentUser.uid == import.meta.env.VITE_Admin_ID ? (
       <Outlet/>
     ):(
-      <Navigate to="/" state={{from:location}} replace/>
+      <Navigate to="/AdminLogin" state={{from:location}} replace/>
     );
     
     } catch (error) {
         console.log(error)
     }
 
-  
-
-
-}
+};
 
 export default PrivateRouteuser;
+
